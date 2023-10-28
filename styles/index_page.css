@@ -91,11 +91,20 @@ ul li:hover a {
   color: #666; /* Gray text */
 }
 .about {
-  padding: 35px 25px;
-  background-color: #ffffff; /* White about section background */
+  max-height: 0; /* Set initial max-height to 0 */
+  overflow: hidden; /* Hide content that overflows the max-height */
+  transition: max-height 0.5s cubic-bezier(0.57, 0.21, 0.69, 3.25); /* Add a transition for max-height with a duration of 0.5 seconds */
+  transition: padding 0.8s ease-in-out;
   color: #444; /* Slightly darker gray text */
   text-align: center;
+  background: linear-gradient(180deg, #ffffff, #f2f2f2);
 }
+.about.active {
+  max-height: 500px; /* Adjust the max-height to the desired expanded height */
+  background: #ffffff;
+  padding: 20px;
+}
+
 .about_header {
   text-align: center;
   background-color: #777;
