@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 /* Body */
 body {
   font-family: source-sans-pro;
@@ -91,9 +92,18 @@ ul li:hover a {
 }
 .about {
   padding: 35px 25px;
-  display: inline-block;
   background-color: #ffffff; /* White about section background */
   color: #444; /* Slightly darker gray text */
+  text-align: center;
+}
+.about_header {
+  text-align: center;
+  background-color: #777;
+  padding: 20px;
+  border: 3px solid #f2f2f2;
+}
+.about_header:hover {
+  cursor: pointer;
 }
 /* Stats Gallery */
 .stats {
@@ -123,13 +133,17 @@ ul li:hover a {
   color: #666; /* Gray text */
 }
 /* Parallax Section */
+
 .banner {
   background-color: #222; /* Dark gray banner background */
-  background-image: url(../images/parallax.png);
+  background-image: url(../images/water.jpg);
   height: 400px;
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
+}
+.banner h2 {
+  margin-bottom: 20px;
 }
 .parallax {
   color: #fff; /* White text */
@@ -137,9 +151,10 @@ ul li:hover a {
   padding: 110px 100px 0 0;
   letter-spacing: 2px;
   margin: 0;
+  font-size: 32px;
 }
 .parallax_description {
-  color: #fff; /* White text */
+  color: #ffffff; /* White text */
   text-align: right;
   padding: 0 100px 0 0;
   width: 30%;
@@ -147,6 +162,10 @@ ul li:hover a {
   font-weight: lighter;
   line-height: 23px;
   margin: 0;
+  font-size: 20px;
+  background-color: rgba(160, 160, 160, 0.5);
+  padding: 20px 60px 20px 60px;
+  border-radius: 10px;
 }
 /* More info */
 footer {
@@ -166,7 +185,7 @@ footer .footer_column h3 {
 }
 footer .footer_column p {
   padding: 0 30px;
-  text-align: justify;
+  text-align: center;
   line-height: 25px;
   font-weight: lighter;
   margin: 0 20px;
@@ -200,28 +219,36 @@ footer .footer_column p {
   color: #ddd; /* Lighter gray on hover */
   cursor: pointer;
 }
-.copyright {
-  text-align: center;
-  padding: 20px 0;
-  background-color: #444; /* Dark gray footer background */
-  color: #fff; /* White text */
-  text-transform: uppercase;
-  font-weight: lighter;
-  letter-spacing: 2px;
-  border-top-width: 2px;
-}
+
 .footer_banner {
-  background-color: #333; /* Dark gray footer banner background */
+  background-color: #666; /* Dark gray footer banner background */
   padding: 60px 0;
   margin-bottom: 0;
-  background-image: url(../images/pattern.png);
+  background-image: url(../images/old_town.jpg);
   background-repeat: repeat;
 }
+
 footer {
   display: inline-block;
 }
-.hidden {
-  display: none;
+
+.contact-info {
+  text-align: center;
+  color: #fff;
+}
+
+.contact-info strong {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.contact-info a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  color: #888; /* Change to a lighter grayish color on hover */
 }
 
 /* Mobile */
@@ -316,10 +343,13 @@ footer {
     float: none;
   }
   nav ul li {
-    margin: 0;
+    margin-right: 10px;
     width: 100%;
     text-align: center;
     padding: 8px 0;
+  }
+  nav ul li a {
+    font-size: 12px; /* Reduce the font size for smaller screens */
   }
   .text_column {
     width: 100%;

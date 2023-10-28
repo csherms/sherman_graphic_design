@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sherman Graphic Design</title>
-  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./styles/index_page.css">
 
 </head>
 
@@ -19,9 +19,9 @@
 
       <nav>
         <ul>
-          <li><a href="#hero">HOME</a></li>
-          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#about" id="aboutLink">PRICING</a></li>
           <li> <a href="#contact">CONTACT</a></li>
+          <li><a href="./pages/logo_designs.html">LOGO DESIGNS</a></li>
         </ul>
       </nav>
     </header>
@@ -30,78 +30,59 @@
       <h2 class="hero_header">SHERMAN <span class="light">GRAPHIC DESIGN</span></h2>
       <p class="tagline">Modern logo designs for your business.</p>
     </section>
+
     <!-- About Section -->
+    <section class="about_header">
+      <h2>PRICING</h2>
+    </section>
     <section class="about" id="about">
-      <h2 class="hidden">About</h2>
-      <p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-        fugiat nulla pariatur. </p>
-      <p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-        fugiat nulla pariatur. </p>
-      <p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-        fugiat nulla pariatur. </p>
+      <p class="text_column">I charge a base fee of $200 (USD) to do an initial mockup for a logo design. This first
+        draft design will come with a watermark that will be removed upon full purchase. </p>
+      <p class="text_column">The full price of any logo is an aditional $300 (USD) on top of the initial $200 for the
+        mockup (totalling $500 USD). The watermark will be removed and the logo delivered in any required format via
+        email or in person depending on client location. </p>
+      <p class="text_column">Logo design timeframes may vary depending on the complexity of the design. The typical
+        length of time for an initial mockup is 1 week. All revision work and design edits beyond the additional mockup
+        price are billed hourly. The revision rate is $20 (USD) per hour in addition to the flat rate fee of $500 (USD).
+      </p>
     </section>
     <!-- Stats Gallery Section -->
-    <div class="gallery">
-      <div class="thumbnail">
-        <h1 class="stats">1500</h1>
-        <h4>TITLE</h4>
-        <p>One line description</p>
-      </div>
-      <div class="thumbnail">
-        <h1 class="stats">2300</h1>
-        <h4>TITLE</h4>
-        <p>One line description</p>
-      </div>
-      <div class="thumbnail">
-        <h1 class="stats">7500</h1>
-        <h4>TITLE</h4>
-        <p>One line description</p>
-      </div>
-      <div class="thumbnail">
-        <h1 class="stats">9870</h1>
-        <h4>TITLE</h4>
-        <p>One line description</p>
-      </div>
-    </div>
+
     <!-- Parallax Section -->
     <section class="banner">
-      <h2 class="parallax">PARALLAX HERO</h2>
-      <p class="parallax_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+      <h2 class="parallax">CASEY SHERMAN</h2>
+      <p class="parallax_description">Let me help you create a logo design or advetisement for you're business.
+      </p>
     </section>
     <!-- More Info Section -->
     <footer>
       <article class="footer_column">
         <h3>ABOUT</h3>
         <img src="./images/me.jpg" alt="" width="400" height="300" class="cards" />
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-          nulla </p>
+        <p>I have an Associate's degree
+          from Bryan University in Tempe Arizona and persue technical knowledge and new skillsets
+          everyday. I have been an artist for many years, and my mission is to help you create a logo design for you
+          business or personal use. </p>
       </article>
       <article class="footer_column">
         <h3>LOCATION</h3>
         <img src="./images/old_town.jpg" alt="" width="400" height="300" class="cards" />
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-          nulla </p>
+        <p>Beautiful Pocatello Idaho. </p>
       </article>
     </footer>
     <!-- Footer Section -->
     <section class="footer_banner" id="contact">
-      <h2 class="hidden">Footer Banner Section </h2>
-      <p class="hero_header">FOR THE LATEST NEWS &amp; UPDATES</p>
-      <div class="button">subscribe</div>
+      <p class="hero_header">CONTACT ME</p>
+      <p class="contact-info" style="text-align: center; color: #fff;">
+        <strong>Name:</strong> Casey Sherman<br>
+        <strong>Phone:</strong> (208) 244-2760<br>
+        <strong>Email:</strong> <a href="mailto:john.doe@example.com"
+          style=" text-decoration: none;">shermangraphicdesigns@gmail.com</a>
+      </p>
     </section>
     <!-- Copyrights Section -->
   </div>
+  <script src="./app/app.js"></script>
 </body>
 
 </html>
