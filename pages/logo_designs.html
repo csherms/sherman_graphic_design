@@ -4,46 +4,49 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../styles/logo_designs_page.css"> <!-- Link to your CSS file -->
+  <link rel="stylesheet" href="../styles/logo_designs_page.css">
   <title>Logo Designs</title>
 </head>
 
 <body>
-  <header>
-    <nav class="navbar">
-      <ul>
-        <li><a href="../index.html">Home</a></li>
-      </ul>
-    </nav>
-    <!-- Your header content here -->
-  </header>
+  <div class="container">
+    <header>
+      <nav class="navbar">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <section class="logo-designs">
-    <h1>Logo Designs</h1>
-    <div class="gallery">
-      <!-- Add your images here -->
-      <div class="thumbnail">
-        <img src="../images/logo_designs/udad/golfer_watermark.png" alt="Logo Design 1">
+    <section class="logo-designs">
+      <h1>Logo Designs</h1>
+      <div class="gallery">
+        <a class="image-link" href="#">
+          <img src="../images/logo_designs/udad/golfer_watermark.png" alt="Logo Design 1">
+        </a>
+        <a class="image-link" href="#">
+          <img src="../images/logo_designs/udad/fisherman_watermark.png" alt="Logo Design 2">
+        </a>
+        <!-- Add more images as needed -->
       </div>
-      <div class="thumbnail">
-        <img src="../images/logo_designs/udad/fisherman_watermark.png" alt="Logo Design 2">
-      </div>
-      <!-- Add more images as needed -->
+    </section>
+
+    <div id="imageModal" class="modal">
+      <span class="close" id="closeModal">&times;</span>
+      <img class="modal-content" id="modalImage">
     </div>
-  </section>
+  </div>
 
   <section class="contact-me">
     <h2>Contact Me</h2>
-    <p>Call, text or email me for further information.</p>
+    <p>Call, text, or email me for further information.</p>
     <p>Cell: 208-244-2760</p>
-    <p><a href="mailto:https://mail.google.com/mail/u/7/?ogbl#inbox">Send Email</a></p>
+    <p><a href="mailto:youremail@example.com">Send Email</a></p>
   </section>
 
-  <footer>
-    <!-- Your footer content here -->
-  </footer>
 
-  <script src="../app/app.js"></script>
+
+  <script src="../app/logo_designs.js"></script>
 </body>
 
 </html>
