@@ -1,4 +1,12 @@
 /* Reset list-style-type to remove the dots from the navbar */
+h1 {
+  pointer-events: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 .navbar ul {
   list-style-type: none;
   padding: 0;
