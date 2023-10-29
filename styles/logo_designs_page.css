@@ -101,6 +101,17 @@ footer {
 }
 
 /* Responsive Adjustments */
+
+@media (min-width: 768px) and (max-width: 1000px) {
+  .image-link {
+    width: calc(50% - 20px); /* Adjust the width for this range */
+  }
+
+  .image-link h2 {
+    font-size: 18px; /* Keep the font size as needed */
+  }
+}
+
 @media (max-width: 767px) {
   .navbar ul li {
     margin-right: 10px;
@@ -112,5 +123,19 @@ footer {
 
   .image-link {
     width: calc(50% - 20px);
+  }
+
+  .image-link h2 {
+    font-size: 16px; /* Adjust the font size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .image-link {
+    width: calc(100% - 20px); /* Full width for even smaller screens */
+  }
+
+  .image-link h2 {
+    font-size: 14px; /* Further reduce font size for very small screens */
   }
 }
