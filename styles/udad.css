@@ -80,7 +80,7 @@ a {
 }
 
 .image-link {
-  width: calc(33.33% - 20px);
+  width: calc(25% - 20px);
   margin: 10px;
   text-align: center;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
@@ -89,6 +89,7 @@ a {
 .image-link img {
   max-width: 100%;
   height: auto;
+  width: 100%;
 }
 
 /* Contact Me Section */
@@ -158,9 +159,10 @@ footer {
   color: #fff;
 }
 
-.enlarged {
-  transform: scale(1); /* Reset the image scaling to its original size */
-  transition: transform 0.3s; /* Add a smooth transition effect */
+.modal-content.enlarged {
+  width: 90%; /* Adjust as needed */
+  max-width: 90%; /* Limit image width to 90% of the viewport width */
+  max-height: 90vh; /* Limit image height to 90% of the viewport height */
 }
 
 #modalImage {
@@ -170,6 +172,34 @@ footer {
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3); /* Add a shadow effect with your desired properties */
 }
 
+#prevImage,
+#nextImage {
+  /* Position the navigation buttons */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  cursor: pointer;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  border-radius: 50%;
+  user-select: none;
+  z-index: 2;
+}
+
+#prevImage {
+  left: 10px;
+}
+
+#nextImage {
+  right: 10px;
+}
+
+#prevImage:hover,
+#nextImage:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
 .back-to-top {
   display: none; /* Initially hide the link */
   position: fixed;

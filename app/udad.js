@@ -3,56 +3,57 @@ document.addEventListener("DOMContentLoaded", function () {
   const imageModal = document.getElementById("imageModal");
   const modalImage = document.getElementById("modalImage");
   const closeModal = document.getElementById("closeModal");
+  const prevImage = document.getElementById("prevImage");
+  const nextImage = document.getElementById("nextImage");
+  let currentIndex = 0;
 
-  let isImageEnlarged = false; // Variable to track the image state
-
-  // Function to toggle the modal
-  function toggleModal() {
-    if (isImageEnlarged) {
-      modalImage.classList.remove("enlarged"); // Remove the class for enlarged image
-      isImageEnlarged = false;
-    } else {
-      modalImage.classList.add("enlarged"); // Add the class for enlarged image
-      isImageEnlarged = true;
-    }
-
-    if (imageModal.style.display === "block") {
-      imageModal.style.display = "none";
-    } else {
-      imageModal.style.display = "block";
-    }
-  }
-
+  // Create an array to store image sources
+  const imagesArray = [];
   imageLinks.forEach((link) => {
+    imagesArray.push(link.querySelector("img").src);
     link.addEventListener("click", function (e) {
       e.preventDefault();
       const image = link.querySelector("img");
+      currentIndex = imagesArray.indexOf(image.src);
       modalImage.src = image.src;
-      toggleModal();
+      imageModal.style.display = "block";
     });
   });
 
   closeModal.addEventListener("click", function () {
-    toggleModal();
+    imageModal.style.display = "none";
   });
-});
 
-window.onscroll = function () {
-  var scrollPos = document.documentElement.scrollTop || document.body.scrollTop;
-  var backToTop = document.querySelector(".back-to-top");
+  // Function to display the previous image in the modal
+  prevImage.addEventListener("click", function () {
+    currentIndex = (currentIndex - 1 + imagesArray.length) % imagesArray.length;
+    modalImage.src = imagesArray[currentIndex];
+  });
 
-  if (scrollPos > 600) {
-    // Adjust this value to control when the link appears
-    backToTop.style.display = "block";
-  } else {
-    backToTop.style.display = "none";
-  }
-};
+  // Function to display the next image in the modal
+  nextImage.addEventListener("click", function () {
+    currentIndex = (currentIndex + 1) % imagesArray.length;
+    modalImage.src = imagesArray[currentIndex];
+  });
 
-// Scroll to top when the "Back to Top" link is clicked
-document.querySelector(".back-to-top").addEventListener("click", function () {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
+  window.onscroll = function () {
+    var scrollPos =
+      document.documentElement.scrollTop || document.body.scrollTop;
+    var backToTop = document.querySelector(".back-to-top");
+
+    if (scrollPos > 600) {
+      // Adjust this value to control when the link appears
+      backToTop.style.display = "block";
+    } else {
+      backToTop.style.display = "none";
+    }
+  };
+
+  // Scroll to top when the "Back to Top" link is clicked
+  document.querySelector(".back-to-top").addEventListener("click", function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   });
 });
