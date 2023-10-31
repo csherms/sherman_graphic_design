@@ -120,6 +120,7 @@ ul li:hover a {
   max-height: 500px; /* Adjust the max-height to the desired expanded height */
   background: #ffffff;
   padding: 20px;
+  margin-bottom: 40px;
 }
 
 .about_header {
@@ -283,6 +284,21 @@ footer {
   color: #888; /* Change to a lighter grayish color on hover */
 }
 
+.back-to-top {
+  display: none; /* Initially hide the link */
+  position: fixed;
+  bottom: 20px; /* Adjust the desired distance from the bottom */
+  right: 20px; /* Adjust the desired distance from the right */
+  padding: 10px 20px;
+  background-color: #52bad5;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.back-to-top:hover {
+  background-color: #444; /* Change background color on hover */
+}
 /* Mobile */
 @media (max-width: 320px) {
   .logo {

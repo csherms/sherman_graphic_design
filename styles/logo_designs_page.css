@@ -27,6 +27,10 @@
   text-transform: uppercase;
 }
 
+.navbar ul li a:hover {
+  color: #ccc;
+}
+
 /* Logo Designs Section */
 .logo-designs {
   text-align: center;

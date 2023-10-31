@@ -35,6 +35,30 @@ a {
   text-transform: uppercase;
 }
 
+.navbar ul li a:hover {
+  color: #ccc;
+}
+
+.udad-nav ul {
+  list-style: none; /* Remove list item bullet points */
+  padding: 0; /* Remove default padding */
+  display: flex; /* Display the list items in a flex container */
+  justify-content: space-evenly; /* Distribute space evenly between links */
+  align-items: center; /* Center items vertically within the container */
+}
+
+.udad-nav li {
+  display: inline; /* Display the list items inline */
+  margin-right: 20px; /* Add spacing between the links */
+}
+
+/* Style the links themselves (optional) */
+.udad-nav a {
+  text-decoration: none;
+  color: #333; /* Adjust the link color as needed */
+  padding: 10px; /* Add padding to create space around the links */
+}
+
 /* Logo Designs Section */
 .logo-designs {
   text-align: center;
@@ -145,6 +169,23 @@ footer {
   border: 2px solid #333; /* Add a border with your desired style and color */
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3); /* Add a shadow effect with your desired properties */
 }
+
+.back-to-top {
+  display: none; /* Initially hide the link */
+  position: fixed;
+  bottom: 20px; /* Adjust the desired distance from the bottom */
+  right: 20px; /* Adjust the desired distance from the right */
+  padding: 10px 20px;
+  background-color: #52bad5;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.back-to-top:hover {
+  background-color: #444; /* Change background color on hover */
+}
+
 /* Responsive Adjustments */
 @media (max-width: 767px) {
   .navbar ul li {

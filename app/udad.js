@@ -36,3 +36,23 @@ document.addEventListener("DOMContentLoaded", function () {
     toggleModal();
   });
 });
+
+window.onscroll = function () {
+  var scrollPos = document.documentElement.scrollTop || document.body.scrollTop;
+  var backToTop = document.querySelector(".back-to-top");
+
+  if (scrollPos > 600) {
+    // Adjust this value to control when the link appears
+    backToTop.style.display = "block";
+  } else {
+    backToTop.style.display = "none";
+  }
+};
+
+// Scroll to top when the "Back to Top" link is clicked
+document.querySelector(".back-to-top").addEventListener("click", function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
