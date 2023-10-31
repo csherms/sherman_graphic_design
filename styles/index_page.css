@@ -120,7 +120,7 @@ ul li:hover a {
   max-height: 500px; /* Adjust the max-height to the desired expanded height */
   background: #ffffff;
   padding: 20px;
-  margin-bottom: 40px;
+  padding-bottom: 40px;
 }
 
 .about_header {
