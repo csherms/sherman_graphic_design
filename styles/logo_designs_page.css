@@ -57,6 +57,7 @@
   background-color: #666;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
+  padding: 10px;
 }
 
 .image-link img {
@@ -105,7 +106,6 @@ footer {
 }
 
 /* Responsive Adjustments */
-
 @media (min-width: 768px) and (max-width: 1000px) {
   .image-link {
     width: calc(50% - 20px); /* Adjust the width for this range */

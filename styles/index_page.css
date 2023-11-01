@@ -85,9 +85,9 @@ ul li:hover a {
   width: 29%;
   text-align: justify;
   font-weight: lighter;
-  line-height: 25px;
+  line-height: 1.4; /* Use a relative unit like line-height: 1.4; */
   float: left;
-  padding: 0 20px;
+  padding: 0 1.2rem; /* Use relative units for padding, e.g., 1.2rem */
   color: #0c0c0c; /* Gray text */
 }
 .about {
@@ -117,17 +117,17 @@ ul li:hover a {
   opacity: 0.2; /* Adjust the opacity as needed */
 }
 .about.active {
-  max-height: 500px; /* Adjust the max-height to the desired expanded height */
+  max-height: 31.25rem; /* Adjust the max-height to the desired expanded height using a relative unit, e.g., 31.25rem */
   background: #ffffff;
-  padding: 20px;
-  padding-bottom: 40px;
+  padding: 1.25rem; /* Use relative units for padding, e.g., 1.25rem */
+  padding-bottom: 2.5rem;
 }
 
 .about_header {
   text-align: center;
   background-color: #777;
-  padding: 20px;
-  border: 3px solid #f2f2f2;
+  padding: 1.25rem; /* Use relative units for padding, e.g., 1.25rem */
+  border: 0.1875rem solid #f2f2f2;
 }
 .about_header:hover {
   cursor: pointer;
