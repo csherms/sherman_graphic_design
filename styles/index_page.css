@@ -117,7 +117,7 @@ ul li:hover a {
   opacity: 0.2; /* Adjust the opacity as needed */
 }
 .about.active {
-  max-height: 31.25rem; /* Adjust the max-height to the desired expanded height using a relative unit, e.g., 31.25rem */
+  max-height: none; /* Adjust the max-height to the desired expanded height using a relative unit, e.g., 31.25rem */
   background: #ffffff;
   padding: 1.25rem; /* Use relative units for padding, e.g., 1.25rem */
   padding-bottom: 2.5rem;
