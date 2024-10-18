@@ -129,6 +129,11 @@ footer {
   color: #fff;
 }
 
+#udad-link {
+  text-decoration: overline;
+  margin-top: 40px;
+}
+
 /* Modal (lightbox) */
 .modal {
   display: none;
